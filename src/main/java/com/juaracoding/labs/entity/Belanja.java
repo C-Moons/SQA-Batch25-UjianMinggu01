@@ -8,11 +8,11 @@ public class Belanja {
     private int hargatotal;
     private int hargaafterdiskon;
 
-    public Belanja(int harga, int jumlahbarang) {
-        this.hargabarang = harga;
-        this.jumlahbarang = jumlahbarang;
-        this.hargatotal = harga * jumlahbarang;
-    }
+    // public Belanja(int harga, int jumlahbarang) {
+    //     this.hargabarang = harga;
+    //     this.jumlahbarang = jumlahbarang;
+    //     this.hargatotal = harga * jumlahbarang;
+    // }
 
 
     public int getHargabarang() {
@@ -43,7 +43,8 @@ public class Belanja {
         return hargatotal;
     }
     public void setHargatotal(int hargatotal) {
-        this.hargatotal = hargatotal;
+        // this.hargatotal = hargatotal;
+        this.hargatotal = hargabarang * jumlahbarang;
     }
     public int getHargaafterdiskon() {
         return hargaafterdiskon;

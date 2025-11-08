@@ -16,7 +16,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        Belanja belanja = new Belanja(200000, 10);
+        Belanja belanja = new Belanja();
+        belanja.setHargabarang(100000);
+        belanja.setJumlahbarang(5);
+        belanja.setHargatotal(0);
         System.out.println("========== Summary ==========");
         System.out.println("Harga Before discount : " + belanja.getHargatotal());
 
